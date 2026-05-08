@@ -64,7 +64,7 @@ export default function RecordList() {
 
   return (
     <div>
-      <h3 className="text-lg font-semibold p-4">Employee Records</h3>
+      <h3 className="text-lg font-semibold pt-6 pb-2 px-0">Employee Records</h3>
       <div className="border rounded-md">
         <table className="w-full caption-bottom text-sm">
           <thead className="[&_tr]:border-b">
