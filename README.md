@@ -622,6 +622,15 @@ graph TD
 - **Infinite Retrieval Loop**: Fixed the infinite network request loop in `RecordList.jsx` by properly configuring the dependency array.
 - **Eliminated Dead Packages**: Identified and removed the redundant `env` dependency, consolidating variable management under `dotenv`.
 
+### 🎨 UI & DX (Developer Experience) Improvements
+- **VS Code Unknown `@tailwind` at-rule Warnings**: Created a local `.vscode/settings.json` file configuring the VS Code CSS engine to ignore Tailwind-specific at-rules (resolving the common `unknownAtRules` warnings):
+  ```json
+  {
+    "css.lint.unknownAtRules": "ignore"
+  }
+  ```
+- **Perfect Column & Header Alignment**: Cleaned up the global `#root` container style in `index.css` by removing `text-align: center` and the unnecessary `border-inline` lines, which allows the table headers and record rows to align perfectly (matching the reference design).
+
 ### 🛡️ Security Fixes
 - **Credentials Hidden**: Added the root `config.env` to the `.gitignore` configuration to prevent Atlas credentials from being pushed to public repositories.
 
